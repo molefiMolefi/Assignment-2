@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="600.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.molefi.HelloController">
+   <children>
+      <ImageView fx:id="back" fitHeight="60.0" fitWidth="60.0" layoutX="270.0" layoutY="400.0">
+         <image>
+            <Image url="@back.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="play" fitHeight="60.0" fitWidth="60.0" layoutX="59.0" layoutY="400.0" onMouseClicked="#play">
+         <image>
+            <Image url="@play.jpg" />
+         </image>
+      </ImageView>
+      <MediaView fx:id="view" fitHeight="280.0" fitWidth="350.0" layoutX="200.0" layoutY="88.0" />
+      <ImageView fx:id="playBack" fitHeight="60.0" fitWidth="60.0" layoutX="210.0" layoutY="400.0" onMouseClicked="#playback">
+         <image>
+            <Image url="@playBack.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="forward" fitHeight="60.0" fitWidth="60.0" layoutX="390.0" layoutY="400.0" onMouseClicked="#playnext">
+         <image>
+            <Image url="@forward.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stop" fitHeight="60.0" fitWidth="60.0" layoutX="119.0" layoutY="400.0" onMouseClicked="#stop">
+         <image>
+            <Image url="@stop.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pause" fitHeight="60.0" fitWidth="60.0" layoutX="-1.0" layoutY="400.0" onMouseClicked="#pause">
+         <image>
+            <Image url="@pause.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="next" fitHeight="60.0" fitWidth="60.0" layoutX="330.0" layoutY="400.0">
+         <image>
+            <Image url="@next.jpg" />
+         </image>
+      </ImageView>
+      <Slider fx:id="slider" layoutX="460.0" layoutY="423.0" value="20.0" />
+      <Slider fx:id="progress" layoutX="3.0" layoutY="379.0" prefHeight="14.0" prefWidth="594.0" />
+   </children>
+</AnchorPane>
